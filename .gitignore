@@ -1,15 +1,15 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
+#sites/*/*settings*.php
 
 # Ignore paths that contain generated content.
-cache/
-files/
+#cache/
+#files/
 #sites/*/files
-sites/*/private
+#sites/*/private
 
 # Ignore default text files
-.htaccess
-robots.txt
+#.htaccess
+#robots.txt
 /CHANGELOG.txt
 /COPYRIGHT.txt
 /INSTALL*.txt
