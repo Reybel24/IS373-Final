@@ -168,8 +168,12 @@
   <?php endif; ?>
 
     <div id="main-content">
-    <div class="container"> 
+        <?php if (drupal_is_front_page()): ?><div class="home-section-small"><div class="home-section-small-inner"><div class="home-person-img"></div>"Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution."</div></div><?php endif; ?>
+        <?php if (!drupal_is_front_page()): ?> <div class="header-section-small"></div><?php endif; ?>
+
+    <div class="container">
       <div class="row">
+
         <?php if($page['sidebar_first']) { $primary_col = 8; } else { $primary_col = 12; } ?>
         <div id="primary" class="content-area col-sm-<?php print $primary_col; ?>">
           <section id="content" role="main" class="clearfix">
